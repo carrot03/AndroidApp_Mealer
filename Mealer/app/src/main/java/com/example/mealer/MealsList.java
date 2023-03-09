@@ -37,11 +37,11 @@ public class MealsList extends ArrayAdapter<Meal> {
         TextView textViewGastronomyType = (TextView) listViewItem.findViewById(R.id.textViewGastronomyType);
 
         Meal meal = meals.get(position);
-        textViewChefName.setText(meal.getChefName());
-        textViewMealName.setText(meal.getMealName());
-        textViewMealType.setText(meal.getMealType());
-        textPrice.setText((String.valueOf(meal.getPrice()))+" CAD");
-        textViewGastronomyType.setText(meal.getGastronomyType());
+        textViewChefName.setText("Chef's Name: "+meal.getChefName());
+        textViewMealName.setText("Meal: "+meal.getMealName());
+        textViewMealType.setText("Type: "+meal.getMealType());
+        textPrice.setText("Price: "+(String.valueOf(meal.getPrice()))+" CAD");
+        textViewGastronomyType.setText("Gastronomy Type: "+meal.getGastronomyType());
 
         return listViewItem;
     }
