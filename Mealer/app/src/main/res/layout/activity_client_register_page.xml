@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        android:layout_height="match_parent"
+        tools:context=".ClientRegisterPage"
+        android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:id="@+id/clientpagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Client registration"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <EditText
+        android:id="@+id/inputname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Name"
+        android:layout_below="@id/banner"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/inputlastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputname"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Last name" />
+
+    <EditText
+        android:id="@+id/inputemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputlastname"
+        android:hint="Email address"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp" />
+
+    <EditText
+        android:id="@+id/inputpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/inputemail"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="30dp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/inputpass"
+        android:inputType="textPostalAddress"
+        android:hint="Address"/>
+
+    <TextView
+        android:id="@+id/credittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address"
+        android:text="Enter card details:"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/creditcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/credittext"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="0dp"/>
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/creditcard"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="21dp"
+            android:hint="CVV" />
+
+        <EditText
+            android:id="@+id/expiry"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="21dp"
+            android:inputType="date"
+            android:hint="MM/YY"/>
+
+        <Button
+        android:id="@+id/donebuttonclient"
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expiry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="70dp"
+        android:text="Done" />
+
+    </RelativeLayout>
+</ScrollView>

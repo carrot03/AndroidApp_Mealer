@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cartActivity"
+    tools:context=".PageMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/panel"
+        android:background="#E7E7E7"
+        android:orientation="horizontal"
+        android:weightSum="16">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="2"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="11"
+            android:gravity="center"
+            android:text="Cart"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="299dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scroll Down to see your cart :"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_drink"
+            android:layout_width="match_parent"
+            android:layout_height="266dp"
+            android:layout_below="@+id/text"
+            android:padding="8dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/approveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="305dp"
+        android:layout_marginBottom="46dp"
+        android:text="Request chef approval" />
+
+    <Button
+        android:id="@+id/ratingBtn"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtinstr"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="46dp"
+        android:text="Rate / Add complaint" />
+
+    <TextView
+        android:id="@+id/txtinstr"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="402dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="241dp"
+        android:gravity="center"
+        android:text="Please note that after clicking on the approve button you should wait for the chef to approve and then payment will be completed"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="524dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="167dp"
+        android:gravity="center"
+        android:text="Total"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

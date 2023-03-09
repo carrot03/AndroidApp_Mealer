@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_animation"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="MEALER"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textStyle="bold|italic" />
+
+   <ImageView
+       android:id="@+id/image"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/banner"
+       android:layout_marginEnd="4dp"
+       android:layout_marginBottom="450dp"
+       android:src="@drawable/mealer" />
+
+    <TextView
+        android:id="@+id/emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/image"
+        android:text="Email address:" />
+
+    <EditText
+        android:id="@+id/inputemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtext"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Email"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/passwordtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputemail"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:text="Password:" />
+
+    <EditText
+        android:id="@+id/inputpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordtext"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputpassword"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/regtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginbutton"
+        android:layout_marginTop="2dp"
+        android:text="Don't have a Mealer account yet?"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regtext"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:text="Register"
+        android:background="@drawable/button"/>
+
+
+</RelativeLayout>

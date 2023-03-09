@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    tools:context=".CookPage">
+
+
+    <TextView
+        android:id="@+id/welcomingTag"
+        android:layout_width="207dp"
+        android:layout_height="30dp"
+        android:text=""
+        android:fontFamily="monospace"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yourMenu"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/signOutBtn"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="monospace"
+        android:text="Your menu:"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textSize="34sp" />
+
+    <LinearLayout
+        android:id="@+id/linlayout"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/end_color"
+        android:layout_height="530dp"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/yourMenu"
+        android:background="@color/cardview_light_background"
+        >
+
+        <ListView
+            android:id="@+id/listViewMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addMealBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linlayout"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="55dp"
+        android:background="@drawable/button"
+        android:text="Add Meal"
+        android:textColor="#695B4A"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/signOutBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomingTag"
+        android:layout_alignParentStart="true"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/button"
+        android:text="Sign Out"
+        android:textAlignment="center"
+        android:textColor="#695B4A" />
+
+    <Button
+        android:id="@+id/goProfileBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomingTag"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button"
+        android:text="view profile"
+        android:textAlignment="center"
+        android:textColor="#695B4A" />
+
+    <Button
+        android:id="@+id/viewordersBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/middle_color"
+        android:textColor="@color/white"
+        android:text="orders"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/addMealBtn"
+        android:layout_below="@id/linlayout"
+        android:layout_marginEnd="10dp"/>
+
+</RelativeLayout>
