@@ -2,38 +2,44 @@
 An Android application. The pupose of this application is to let the users order food and pick up their food from the chef's location.  
 Also, the chef can add, edit, remove, display or not his meals.  
 
-![](photos/firstPage.jpeg)
+<img src="photos/firstPage.jpeg" width="350">
 
 ### About the project
 
 Looking at the project from the client side ->  <br>
 1. The following photo is the first page the client will see after he logs in. It is the meals list <br>
-![](photos/ClientMealList.jpeg)
+<img src="photos/ClientMealList.jpeg" width="350">
+
 <br>
 
 2. The following photo is what the client will see if he choses a meal <br>
-![](photos/clientAddMeal.jpeg)
+<img src="photos/clientAddMeal.jpeg" width="350">
+
 <br>
 
 3. After choosing a meal, the client can access his cart and see the total <br>
-![](photos/ClientCart2.jpeg)
+<img src="photos/ClientCart2.jpeg" width="350">
+
 <br>
 
 4. The client can also add as many dishes of the same meal as he wishes to his cart and the total will be automatically calculated. <br>
-![](photos/ClientCart.jpeg)
+<img src="photos/ClientCart.jpeg" width="350">
+
 <br>
 
 5. Now from the chef's side. The chef will be able to add and see all of his meals. Also, the chef can also choose to display or not his meals <br>
-![](photos/chefProfileMenu.jpeg)
+<img src="photos/chefProfileMenu.jpeg" width="350">
+
 <br>
 
 
 6. The chef can see his diplayed and the ones that he is offering.
-![](photos/chefProfile.jpeg)
+<img src="photos/chefProfile.jpeg" width="350">
+
 <br>
 
 7. The chef can also remove his meal from the list by undisplaying it
-![](photos/chefProfileMeals.jpeg)
+<img src="photos/chefProfileMeals.jpeg" width="350">
 <br>
 
 
