@@ -29,6 +29,14 @@ public class Cook extends User {
         rating = 2.5;
     }
 
+    public Cook(String name) {
+        super.setRole("Cook");
+        status = 0;
+        susTime = null;
+        rating = 2.5;
+        this.name = name;
+    }
+
     //setters
     public void setName(String name){
         this.name = name;

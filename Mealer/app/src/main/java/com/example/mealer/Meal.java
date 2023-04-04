@@ -22,6 +22,10 @@ public class Meal {
 	DatabaseReference mealReference;
 	public Meal (){}
 
+	public Meal (String mealName){
+		this.mealName = mealName;
+	}
+
 	public Meal (String id, String chefUid, String mealName, String mealType, String gastronomyType, String price){
 		this.id = id;
 		this.chefUid = chefUid ;

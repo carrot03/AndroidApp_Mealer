@@ -9,13 +9,13 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-public class UnitTests {
+public class ExampleUnitTest {
 
-        Cook cook1 = new Cook();
-        cook1.setName("Zach");
+        Cook cook1 = new Cook("Zach");
+        //cook1.setName("Zach");
 
-        Meal meal1 = new Meal();
-        meal1.setMealName("French fries");
+        Meal meal1 = new Meal("French fries");
+        //meal1.setMealName("French fries");
 
         @Test
         public void cookGetName_isFunctional() {assertEquals("Zach",cook1.getName());}
@@ -30,7 +30,7 @@ public class UnitTests {
 
         @Test
         public void mealSetDisplay_isFunctional() {
-                meal1.setDisplay(true); assertEquals(true, meal1.getDisplay()); }
+                meal1.setDisplay(true); assertEquals(true, meal1.getDisplay());
+        }
 
-    }
 }
