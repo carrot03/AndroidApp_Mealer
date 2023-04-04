@@ -16,11 +16,11 @@ Looking at the project from the client side ->  <br>
 <br>
 
 3. After choosing a meal, the client can access his cart and see the total <br>
-![](photos/ClientCart.jpeg)
+![](photos/ClientCart2.jpeg)
 <br>
 
 4. The client can also add as many dishes of the same meal as he wishes to his cart and the total will be automatically calculated. <br>
-![](photos/ClientCart2.jpeg)
+![](photos/ClientCart.jpeg)
 <br>
 
 5. Now from the chef's side. The chef will be able to add and see all of his meals. Also, the chef can also choose to display or not his meals <br>
