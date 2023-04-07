@@ -27,7 +27,9 @@ Looking at the project from the client side ->  <br>
 
 <br>
 
-5. Now from the chef's side. The chef will be able to add and see all of his meals. Also, the chef can also choose to display or not his meals <br>
+Now from the chef's side -->
+
+5. The chef will be able to add and see all of his meals. Also, the chef can also choose to display or not his meals <br>
 <img src="photos/chefProfileMenu.jpeg" width="350">
 
 <br>
