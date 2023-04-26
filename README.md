@@ -46,17 +46,7 @@ Now from the chef's side -->
 
 
 
-
-
-# Installation 
-To install this application, you can fork it from Github or download it as a zip file. 
-You can run it on  *Android Studio*
-*Download as a zip file*  
-> If you decide to download the application as a zip file, you should add your **local.properties** file to configure the app on your device.   
-
-# Note 
-This project is in progress. Please feel free to send any comment, a problem you faced or even a random question.  
-Contact me on Linkedin: www.linkedin.com/in/hibatant  
+  
 
 # Contributors
 https://github.com/mostefaiii  <br>
